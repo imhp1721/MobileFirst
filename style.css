@@ -50,7 +50,8 @@ body {
     Burgermenu
 -------------------*/
 
-.mobile_menu {
+.mobile_menu,
+.menu_arrow {
     display: none;
 }
 
@@ -67,11 +68,6 @@ body {
     right: 0;
 }
 
-.active_menu {
-    background-color: #f2fff2;
-    border: 2px solid #408040;
-}
-
 .menu_links {
     color: #0a330a;
     font-family: lemonde-courrier, serif;
@@ -81,10 +77,42 @@ body {
     text-decoration: none;
 }
 
+.active_menu {
+    background-color: #f2fff2;
+    border: 2px solid #408040;
+}
+
+.arrow {
+    float: inline-end;
+    max-height: 10px;
+    padding: 5px 10px;
+}
+
 .mobile_menu:checked ~ .menu_list {
     display: flex;
 }
 
+.sub_list {
+    background-color: #c3d9c3;
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+}
+
+.sub_links {
+    color: #0a330a;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.menu_arrow:checked ~ .sub_list {
+    display: flex;
+}
 
 
 
