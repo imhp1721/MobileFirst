@@ -86,3 +86,8 @@ body {
 .footer_heading {
     font-weight: 650;
 }
+
+.footer_text {
+    margin-top: 0.3rem;
+    line-height: 1.2;
+}
