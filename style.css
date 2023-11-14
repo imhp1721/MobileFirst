@@ -56,3 +56,33 @@ body {
     font-weight: 700;
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+/*-----------------
+    Footer section
+-------------------*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20rem;
+    align-items: center;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.footer_some_img {
+    width: 8%;
+    margin-right: 8px;
+}
+
+.footer_heading {
+    font-weight: 650;
+}
