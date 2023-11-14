@@ -36,26 +36,76 @@
     </main>
 
 
+    <!------------------------
+        Footer
+    ---------------------------->
     <footer class="footer">
 
-        <!-------- Adresse info -------->
+        <!------------------------
+            Adresse info
+        ---------------------------->
         <div class="footer_section">
-            <h5 class="">Busbjerg Gudenådalens Hjemstavnsforening</h5>
-            <p> Hagenstru 25 - 8860 Ultrup <br>
+            <h5 class="footer_heading ">Busbjerg Gudenådalens Hjemstavnsforening</h5>
+            <p class="footer_text"> Hagenstrup 25 - 8860 Ultrup <br>
                 busbjerg@busbjerg.dk <br> 
                 CVR: 74740014 <br>
             </p>
         </div>
 
+        <!------------------------
+            Sociale medier icons
+        ---------------------------->
         <div class="footer_section">
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <a href="https://www.facebook.com/Busbjergspillene" target="_blank"><img src="img/some icons/Facebook_icon.png" alt="facebook icon" class="footer_some_img"></a>
+            <a href="https://www.instagram.com/busbjerg_spillene/" target="_blank"><img src="img/some icons/instagram_icon.png" alt="instagram icon" class="footer_some_img"></a>
+            <a href="https://www.tiktok.com/en/" target="_blank"><img src="img/some icons/tik-tok.png" alt="instagram icon" class="footer_some_img"></a>
         </div>
-        <div class="footer_section"></div>
-        <div class="footer_section"></div>
 
+        <!------------------------
+            Automatisk slideshow med sponsorer billeder
+        ---------------------------->
+        <div class="footer_section">
+            <h5 class="footer_heading">Tak til vores sponsorer!</h5>
+            <div class="sponsorer_slideshow" style="max-width: 200px;" >
+              <img class="sponsorerSlides" src="img/sponsorer/original/favrskov_mini.png" style="width:100%">
+              <img class="sponsorerSlides" src="img/sponsorer/original/bjerringbro_mini.png" style="width:100%">
+              <img class="sponsorerSlides" src="img/sponsorer/original/elkon_mini.png" style="width:100%">
+              <img class="sponsorerSlides" src="img/sponsorer/original/ulstrup_mini.png" style="width:100%">
+              <img class="sponsorerSlides" src="img/sponsorer/original/ksn_mini.png" style="width:100%">
+              <img class="sponsorerSlides" src="img/sponsorer/original/roedbakkegaard_mini.png" style="width:100%">
+              <img class="sponsorerSlides" src="img/sponsorer/original/xl_mini.png" style="width:100%">
+            </div>
+
+        </div>
+
+       <!------------------------
+            copyright Busbjerg
+        ---------------------------->
+        <div class="footer_section">
+            <h6>Copyright © 2023 Busbjerg</h6>
+        </div>
 
     </footer>
+
+    <!------------------------
+        Automatisk slideshow script
+    ---------------------------->
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("sponsorerSlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2500); // Change image every 4 seconds
+        }
+     </script>
+
 </body>
 </html>
