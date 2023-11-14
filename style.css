@@ -50,9 +50,37 @@ body {
     Burgermenu
 -------------------*/
 
+.mobile_menu {
+    display: none;
+}
+
+.menu_list {
+    background-color: #c3d9c3;
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    overflow: hidden;
+    padding: 20px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+}
+
+.active_menu {
+    background-color: #f2fff2;
+    border: 2px solid #408040;
+}
+
 .menu_links {
     color: #0a330a;
     font-family: lemonde-courrier, serif;
+    font-size: 1.3rem;
     font-weight: 700;
+    padding: 5px;
     text-decoration: none;
+}
+
+.mobile_menu:checked ~ .menu_list {
+    display: flex;
 }
