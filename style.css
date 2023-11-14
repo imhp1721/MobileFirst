@@ -1,0 +1,47 @@
+body {
+    background-color: #f2fff2;
+    border: 0;
+    font-family: jaf-domus, sans-serif;
+    font-size: 100%;
+    margin: 0 auto;
+    max-width: 100vw;
+    padding: 0;
+}
+
+/*---------------------------
+    Header and navigation
+----------------------------*/
+
+.header {
+    background-color: #c3d9c3;
+    margin: 0;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    position: relative;
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+    justify-self: flex-start;
+}
+
+.logo_img {
+    max-height: 70px;
+    padding: 0 10px;
+}
+
+.nav_icon {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-end;
+}
+
+.sog,
+.burger {
+    max-height: 30px;
+    padding: 0 10px;
+}
