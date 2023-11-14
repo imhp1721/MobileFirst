@@ -59,13 +59,13 @@ body {
     background-color: #c3d9c3;
     display: none;
     flex-direction: column;
+    left: 0;
     list-style: none;
     overflow: hidden;
     padding: 20px;
     position: absolute;
-    top: 80px;
-    left: 0;
     right: 0;
+    top: 80px;
 }
 
 .menu_links {
@@ -82,14 +82,14 @@ body {
     border: 2px solid #408040;
 }
 
+.mobile_menu:checked ~ .menu_list {
+    display: flex;
+}
+
 .arrow {
     float: inline-end;
     max-height: 10px;
     padding: 5px 10px;
-}
-
-.mobile_menu:checked ~ .menu_list {
-    display: flex;
 }
 
 .sub_list {
@@ -110,11 +110,12 @@ body {
     text-decoration: none;
 }
 
-.menu_arrow:checked ~ .sub_list {
+#om_arrow:checked ~ .sub_list,
+#arra_arrow:checked ~ .sub_list,
+#medlem_arrow:checked ~ .sub_list,
+#kontakt_arrow:checked ~ .sub_list {
     display: flex;
 }
-
-
 
 
 
