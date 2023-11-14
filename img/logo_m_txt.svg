@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 504.34 275.09">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 69.84px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #0a330a;
+        font-family: LeMondeCourrierStd-Demi, 'Le Monde Courrier Std';
+        font-weight: 300;
+      }
+
+      .cls-3 {
+        fill: #104010;
+        stroke: #104010;
+        stroke-width: 2px;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: #347334;
+        stroke: #0a330a;
+      }
+
+      .cls-2 {
+        font-size: 63.49px;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g id="Logo_m._tekst" data-name="Logo m. tekst">
+      <path class="cls-4" d="m140.13,138.54c51.98-15.9,90.57-48.55,51.3-75.91,11.97-23.74-12.14-44.52-34.28-38.96-3.09-31.06-53.65-30.8-55.81.17-12.19-22.3-52.19-10.66-45.88,18.77-26.38-14.71-60.06,21.47-34.96,42.99-14.42,3.73-21.41,28.08-2.28,34.68-9.98,5.05-12.17,20.42-4.88,28.68,6.1,6.9,16.94,6.09,37.54,4.17,36.76-3.12,57.18-5.72,89.25-14.6Z"/>
+      <ellipse class="cls-4" cx="109.22" cy="231.59" rx="109.06" ry="42.12" transform="translate(-19.43 10.21) rotate(-4.91)"/>
+      <g>
+        <path class="cls-3" d="m126.56,148.68c50.32-24.45,60.39-31,59.82-32.3-.95-2.19-31.48,12.11-78.37,23-48.83,11.34-84.63,11.84-84.52,13.91.06,1.19,11.92,2.25,68.04,1.31.77,4.24,1.71,10.34,2.22,17.73,3.14,45.27-13.89,77.56-10.77,78.82,2.41.97,12.99-17.97,20.02-35.03,3.5-8.5,5.89-15.97,7.51-21.69,2.42,7.12,6.46,16.89,13.32,27.41,6.1,9.36,16.94,23.15,19.21,21.8,3.52-2.09-22.12-35.38-18.77-79.66.49-6.42,1.48-11.69,2.29-15.3Z"/>
+        <ellipse class="cls-3" cx="109.22" cy="116.95" rx="16.74" ry="9.95" transform="translate(-22.19 208.24) rotate(-81.74)"/>
+      </g>
+      <text class="cls-1" transform="translate(214.35 146.84)"><tspan x="0" y="0">Busbje</tspan><tspan class="cls-5" x="221.68" y="0">r</tspan><tspan x="250.18" y="0">g</tspan></text>
+      <text class="cls-2" transform="translate(232.92 207.05)"><tspan x="0" y="0">Spillene</tspan></text>
+    </g>
+  </g>
+</svg>
