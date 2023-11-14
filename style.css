@@ -45,3 +45,14 @@ body {
     max-height: 30px;
     padding: 0 10px;
 }
+
+/*-----------------
+    Burgermenu
+-------------------*/
+
+.menu_links {
+    color: #0a330a;
+    font-family: lemonde-courrier, serif;
+    font-weight: 700;
+    text-decoration: none;
+}
