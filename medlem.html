@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Links to reset, fonts and styling -->
+
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://use.typekit.net/zey5vry.css">
     <link rel="stylesheet" href="style.css">
 
     <title>Bliv medlem | Busbjerg Spillene</title>
+
 </head>
-<body>
+
+<!-- Start of visible content -->
+
+<body class="body_grid">
 
     <!------------------------
         Header and navigation
@@ -22,17 +28,24 @@
                     <img class="logo_img" src="img/logo_m_txt_png.png" alt="Logo">
                 </a>
             </div>
-            <div class="nav_icon">
-                <a href="#">
-                    <img class="sog" src="img/sog_png.png" alt="Søg">
-                </a>
 
+            <!-- Search bar -->
+
+            <div class="nav_icon">
+                <label for="sog" class="sog_btn"> 
+                    <img class="sog_icon" src="img/sog_png.png" alt="Søg">
+                </label>
+                <input type="checkbox" id="sog" class="sog">
+                <div class="search-container">    
+                     <input type="search" class="search_field" placeholder="Søg...">
+                </div>
+        
                 <!-- Burgermenu -->
 
                 <label for="mobile_menu" class="burger_btn">
                     <img class="burger" src="img/burger_png.png" alt="Menu">
                 </label>
-                <input type="checkbox" id="mobile_menu" class="mobile_menu">
+                     <input type="checkbox" id="mobile_menu" class="mobile_menu">
                     <ul class="menu_list">
 
                         <!-- Main menu / sub pages -->
@@ -143,13 +156,18 @@
             </div>
         </header>
     
-    <main class="main_medlem">
+    <!------------------ 
+        Main content 
+    -------------------->
 
-        <!-- section med heading og billede -->
+    <main class="main">
+
+        <!-------- hero ----------->
+
         <section class="main_medlem_section">
             <h1 class="heading_1">BLIV MEDLEM</h1>
-            <h2 class="heading_2">af Busbjrg Gudenådalens Hjemstavnsforening</h2>
-            <img src="img/Medlemmer.jpg" alt="Busbjergs medlemmer" class="medlem_image">
+            <h2 class="heading_2">af Busbjerg Gudenådalens Hjemstavnsforening</h2>
+            <img src="img/Medlemmer.jpg" alt="Busbjergs medlemmer" class="hero_img">
             <p class="main_text main_text_medlem">Har du lyst til at være med til at holde et af Danmarks ældste
                 friluftsspil kørende? At bidrage til kulturlivet? 
                 At støtte en god sag? Så kan du blive medlem af 
