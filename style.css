@@ -9,13 +9,12 @@
     --header-l: 2rem;
     --header-m: 1.5rem;
     --header-s: 1.3rem;
-    --main-txt-b: 1.3rem;
+    --main-txt-l: 1.3rem;
     --main-txt-s: 1rem;
     /* font-families */
     --headers: lemonde-courrier, serif;
     --main-txt: jaf-domus, sans-serif;
 }
-
 
 body {
     background-color: var(--neutral-light);
