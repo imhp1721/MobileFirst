@@ -149,8 +149,8 @@
         <section class="main_medlem_section">
             <h1 class="heading_1">BLIV MEDLEM</h1>
             <h2 class="heading_2">af Busbjrg Gudenådalens Hjemstavnsforening</h2>
-            <img src="img/Medlemmer.jpg" alt="Busbjergs medlemmer">
-            <p class="">Har du lyst til at være med til at holde et af Danmarks ældste
+            <img src="img/Medlemmer.jpg" alt="Busbjergs medlemmer" class="medlem_image">
+            <p class="main_text main_text_medlem">Har du lyst til at være med til at holde et af Danmarks ældste
                 friluftsspil kørende? At bidrage til kulturlivet? 
                 At støtte en god sag? Så kan du blive medlem af 
                 Busbjerg Gudenådalens Hjemstavnsforening, som udover at
@@ -161,36 +161,63 @@
 
         <!-- Medlemskaber section -->
         <section class="main_medlem_section">
-            <h3 class="">Medlemskaber</h3>
-            <p class="">Du har mulighed for at tegne følgende medlemskaber</p>
-            <ul>
-                <li>Personligt medlemskab: 100 kr. om året</li>
-                <li>Husstandmedlemskab: 300 kr. om året</li>
-                <li>Firmamedlemskab + en fribillet: 500 kr. om året</li>
+            <h3 class="heading_3">Medlemskaber</h3>
+            <p class="main_text main_text_medlem">Du har mulighed for at tegne følgende medlemskaber: </p>
+            <ul class="main_text_medlem">
+                <li class="li_medlem">Personligt medlemskab: 100 kr. om året</li>
+                <li class="li_medlem">Husstandmedlemskab: 300 kr. om året</li>
+                <li class="li_medlem">Firmamedlemskab + en fribillet: 500 kr. om året</li>
               </ul>
         </section>
         
         <!-- Indbetaling til medlemskab section -->
         <section class="main_medlem_section">
-            <h3>Sådan bliver du medlem</h3>
-            <div>
-                <p>Du bliver medlem ved at udfylde formularen nedenfor og 
+            <h3 class="heading_3">Sådan bliver du medlem</h3>
+            <div class="medlem_box">
+                <p class="main_text main_text_medlem">Du bliver medlem ved at udfylde formularen nedenfor og 
                     lave en indbetaling via MobilePay eller vis bankoverførsel. <br>
-                    
+                    <br>
                     MobilePay: 86670 <br>
                     Husk at skrive dit navn i kommentarfeltet <br>
-
+                    <br>
                     Bank: Sparekassen Djursland <br>
                     Reg. nr.:9388 <br>
-                    Konto nr.: 0000497401
+                    Konto nr.: 0000497401 <br>
                     Skriv dit navn i kommentarfeltet
                 </p>
             </div>
         </section>
 
-        <section class="main_medlem_section"></section>
+        <section class="main_medlem_section">
+        <div class="medlem_contact_form">
+            <form action="/action_page.php">
+              <label for="navn">Navn</label>
+              <input type="text" id="navn" name="firstname" placeholder="...">
+          
+              <label for="adress">Adresse</label>
+              <input type="text" id="adress" name="adresse" placeholder="...">
+          
+              <label for="city">By</label>
+              <input type="text" id="city" name="city" placeholder="...">
 
+              <label for="postalcode">Postnummer</label>
+              <input type="text" id="postalcode" name="postalcode" placeholder="...">
 
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="...">
+          
+              <label for="typemedlemskab">Vælg din ønskede type medlemskab</label> <br>
+              <input type="checkbox" id="medlemskab1" name="medlemskab1" value="Personlig">
+              <label for="medlemskab1"> Personligt </label><br>
+              <input type="checkbox" id="medlemskab2" name="medlemskab2" value="Husstand">
+              <label for="medlemskab2"> Husstand </label><br>
+              <input type="checkbox" id="medlemskab3" name="medlemskab3" value="Firma">
+              <label for="medlemskab3"> Firma </label><br><br>
+
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </section>
 
     </main>
     <!------------------------
