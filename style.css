@@ -8,9 +8,8 @@
     /* font-sizes */
     --header-l: 2rem;
     --header-m: 1.5rem;
-    --header-s: 1.3rem;
     --main-txt-l: 1.3rem;
-    --main-txt-s: 1rem;
+    --main-txt-s: 1.1rem;
     /* font-families */
     --headers: lemonde-courrier, serif;
     --main-txt: jaf-domus, sans-serif;
@@ -39,9 +38,17 @@ body {
 .heading_2 {
     padding-bottom: 1rem;
     color: var(--basis-dark);
-    font-weight: 500;
+    font-weight: 600;
     font-family: var(--headers);
     font-size: var(--header-m);
+}
+
+/* Styling af p */
+.main_txt {
+    color: var(--neutral-dark);
+    font-size: var(--main-txt-l);
+    font-weight: 600;
+    line-height: 1.5;
 }
 
 /*---------------------------
@@ -112,7 +119,7 @@ body {
 .menu_links {
     color: var(--basis-dark);
     font-family: var(--headers);
-    font-size: var(--header-s);
+    font-size: var(--main-txt-l);
     font-weight: 700;
     padding: 5px;
 }
@@ -146,7 +153,7 @@ body {
 
 .sub_links {
     color: var(--basis-dark);
-    font-size: var(--header-s);
+    font-size: var(--main-txt-l);
     font-weight: 600;
     padding: 5px;
 }
@@ -158,6 +165,16 @@ body {
     display: flex;
 }
 
+/*-----------------
+    Index main
+-------------------*/
+.index_hero {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
 
 
 
