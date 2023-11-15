@@ -49,7 +49,7 @@ body {
     justify-self: flex-end;
 }
 
-.sog,
+.sog_icon,
 .burger {
     max-height: 30px;
     padding: 0 10px;
@@ -58,11 +58,13 @@ body {
 /*-----------------
     Burgermenu
 -------------------*/
-
+.sog,
 .mobile_menu,
 .menu_arrow {
     display: none;
 }
+
+
 
 .menu_list {
     background-color: var(--neutral-medium);
@@ -161,4 +163,20 @@ body {
 .footer_text {
     margin-top: 0.3rem;
     line-height: 1.2;
+}
+
+
+
+
+
+
+/*---------------
+     Søgefelt
+----------------*/
+.sog:checked ~ .search-container{
+    display: flex;
+}
+
+.search-container {
+    display: none;
 }
