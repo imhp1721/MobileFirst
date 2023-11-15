@@ -90,7 +90,7 @@ body {
 
 .active_menu {
     background-color: var(--neutral-light);
-    border: 2px solid: var(--basis-light);
+    border: 2px solid var(--basis-light);
 }
 
 .mobile_menu:checked ~ .menu_list {
