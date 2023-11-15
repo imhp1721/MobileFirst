@@ -233,10 +233,19 @@ body {
     align-items: center;
     text-align: center;
     padding-top: 2rem;
+
 }
 
 .heading_1 {
     padding-bottom: 0.5rem;
+    color: var(--basis-dark);
+    font-weight: 800;
+}
+
+.heading_2 {
+    padding-bottom: 0.5rem;
+    color: var(--basis-dark);
+    font-weight: 500;
 }
 
 .main_fejlside_section {
@@ -257,8 +266,8 @@ body {
     text-align: center;
     text-decoration: none;
     outline: none;
-    color: #fff;
-    background-color: #04AA6D;
+    color: var(--neutral-light);
+    background-color: var(--basis-dark);
     border: none;
     border-radius: 30px;
     box-shadow: 0 4px #999;
@@ -267,10 +276,10 @@ body {
 }
 
 .call-to-action-button:hover {
-    background-color: #3e8e41}
+    background-color: var(--basis-light)}
 
 .call-to-action-button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 2px #666;
+  background-color: var(--basis-light);
+  box-shadow: 0 2px #5e5e5e;
   transform: translateY(2px);
 }
