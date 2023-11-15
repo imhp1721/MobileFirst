@@ -185,10 +185,10 @@
 
         <section class="medlem_info">
             <h3 class="heading_3">Medlemskaber</h3>
-            <p class="main_txt main_text_medlem">
+            <p class="main_txt">
                 Du har mulighed for at tegne følgende medlemskaber:
             </p>
-            <ul class="main_text_medlem">
+            <ul class="main_txt">
                 <li class="li_medlem">
                     Personligt medlemskab: 100 kr. om året
                 </li>
@@ -202,52 +202,68 @@
         </section>
         
         <!-- Indbetaling til medlemskab section -->
-        <section class="main_medlem_section">
+
+        <section class="medlem_betal">
             <h3 class="heading_3">Sådan bliver du medlem</h3>
             <div class="medlem_box">
-                <p class="main_text main_text_medlem">Du bliver medlem ved at udfylde formularen nedenfor og 
-                    lave en indbetaling via MobilePay eller vis bankoverførsel. <br>
+                <p class="main_txt_box">
+                    Du bliver medlem ved at udfylde formularen nedenfor og 
+                    lave en indbetaling via MobilePay eller vis bankoverførsel.
+                </p>
+                <p class="main_txt_box">
+                    MobilePay: 86670
                     <br>
-                    MobilePay: 86670 <br>
-                    Husk at skrive dit navn i kommentarfeltet <br>
+                    Husk at skrive dit navn i kommentarfeltet
+                </p>
+                <p class="main_txt_box">
+                    Bank: Sparekassen Djursland
                     <br>
-                    Bank: Sparekassen Djursland <br>
-                    Reg. nr.:9388 <br>
-                    Konto nr.: 0000497401 <br>
+                    Reg. nr.: 9388
+                    <br>
+                    Konto nr.: 0000497401
+                    <br>
                     Skriv dit navn i kommentarfeltet
                 </p>
             </div>
         </section>
 
-        <section class="main_medlem_section">
-        <div class="medlem_contact_form">
-            <form action="/action_page.php">
-              <label for="navn">Navn</label>
-              <input type="text" id="navn" name="firstname" placeholder="...">
-          
-              <label for="adress">Adresse</label>
-              <input type="text" id="adress" name="adresse" placeholder="...">
-          
-              <label for="city">By</label>
-              <input type="text" id="city" name="city" placeholder="...">
+        <section class="medlem_form">
+            <form action="#" method="post" autocomplete="on" name="medlem">
+                <label for="name">Navn</label>
+                <input type="text" id="name" class="input_field" placeholder="Skriv fulde navn..." required>
 
-              <label for="postalcode">Postnummer</label>
-              <input type="text" id="postalcode" name="postalcode" placeholder="...">
-
-              <label for="email">Email</label>
-              <input type="text" id="email" name="email" placeholder="...">
+                <label for="address">Adresse</label>
+                <input type="text" id="address" class="input_field" placeholder="Skriv vejnavn og nummer..." required>
           
-              <label for="typemedlemskab">Vælg din ønskede type medlemskab</label> <br>
-              <input type="checkbox" id="medlemskab1" name="medlemskab1" value="Personlig">
-              <label for="medlemskab1"> Personligt </label><br>
-              <input type="checkbox" id="medlemskab2" name="medlemskab2" value="Husstand">
-              <label for="medlemskab2"> Husstand </label><br>
-              <input type="checkbox" id="medlemskab3" name="medlemskab3" value="Firma">
-              <label for="medlemskab3"> Firma </label><br><br>
+                <label for="city">By</label>
+                <input type="text" id="city" class="input_field" placeholder="Skriv bynavn..." required>
 
-              <input type="submit" value="Submit">
+                <label for="postal">Postnummer</label>
+                <input type="text" id="postal" class="input_field" placeholder="Skriv postnummer..." required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input_field" placeholder="Skriv e-mail..." required>
+          
+                <label for="typemedlemskab">Vælg din ønskede type medlemskab</label>
+                <div class="checks">
+                    <div class="check_element">
+                        <input type="checkbox" id="medlemskab1" name="medlemskab1" value="Personlig">
+                        <label for="medlemskab1">Personligt</label>
+                    </div>
+
+                    <div class="check_element">
+                        <input type="checkbox" id="medlemskab2" name="medlemskab2" value="Husstand">
+                        <label for="medlemskab2">Husstand</label>
+                    </div>
+
+                    <div class="check_element">
+                        <input type="checkbox" id="medlemskab3" name="medlemskab3" value="Firma">
+                        <label for="medlemskab3">Firma</label>
+                    </div>
+                </div>
+
+                <input type="submit" value="Submit" class="cta_btn" formtarget="_blank">
             </form>
-          </div>
         </section>
 
     </main>

@@ -79,6 +79,7 @@ body {
     font-family: var(--headers);
     font-size: var(--main-txt-l);
     font-weight: 600;
+    padding-bottom: 5%;
 }
 
 /* --------- p ----------------- */
@@ -89,6 +90,15 @@ body {
     font-weight: 400;
     line-height: 1.5;
     text-align: justify;
+}
+
+.main_txt_box {
+    color: var(--neutral-light);
+    font-size: var(--main-txt-s);
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 2% 0;
+    text-align: left;
 }
 
 /* -------- call-to-action-button --------- */
@@ -337,34 +347,16 @@ body {
 .medlem_txt {
     display: flex;
     padding: 5% 0;
-    width: 90%;
+    width: 89%;
 }
 
 .medlem_info {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 5% 0;
     width: 90%;
-}
-
-.main_medlem_section {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90%;
-}
-
-.main_text_medlem {
-    text-align: start;
-    margin-bottom: 0.8rem;
-}
-
-.medlem_box {
-    background-color: var(--basis-dark);
-    color: var(--neutral-light);
-    padding: 1rem 1.2rem 1rem 1.2rem;
 }
 
 .li_medlem::before {
@@ -373,35 +365,64 @@ body {
     color: var(--basis-dark);
 }
 
-.medlem_contact_form {
-    width: 100%;
-    text-align: start;
-    margin-left: 0.8rem;
+.medlem_betal {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0;
+    width: 90%;
 }
 
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.medlem_box {
+    background-color: var(--basis-dark);
+    padding: 3% 6%;
+}
+
+.medlem_form {
+    font-family: var(--main-txt);
+    font-size: var(--main-txt-s);
+    width: 90%;
+}
+
+.medlem_form label {
+    color: var(--neutral-dark);
+    padding: 2%;
+}
+
+input[type=text],
+input[type=email] {
+    background-color: var(--neutral-light);
+    border: 5px solid var(--basis-light);
+    border-radius: 5px;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+    color: var(--basis-dark);
+    margin: 2% 0;
+    padding: 2%;
+    width: 100%;
+}
+
+.input_field {
+    color: var(--neutral-medium);
+    font-family: var(--main-txt);
+    font-size: var(--main-txt-s);
+}
+
+.checks {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 2% 5% 0;
+}
+
+.check_element {
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    margin: 5% 35%;
 }
-  
-input[type=submit]:hover {
-    background-color: #45a049;
-}
+
 
 /*-----------------------------------
     page not found - styling
