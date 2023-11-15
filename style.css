@@ -339,3 +339,139 @@ body {
 .search-container {
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------
+    main medlemskab section
+-----------------------------*/
+.main_medlem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 2.7rem 1.7rem 0 1.7rem;
+}
+
+.main_medlem_section {
+    padding-bottom: 2rem;
+    max-width: 800px;
+}
+
+.medlem_image {
+    width: 100%;
+    max-width: 800px;
+    padding-bottom: 0.8rem;
+}
+
+.heading_3 {
+    padding-bottom: 1rem;
+    color: var(--basis-dark);
+    font-weight: 700;
+    font-family: var(--headers);
+    font-size: var(--header-m);
+}
+
+.main_text_medlem {
+    text-align: start;
+    margin-bottom: 0.8rem;
+}
+
+.medlem_box {
+    background-color: var(--basis-dark);
+    color: var(--neutral-light);
+    padding: 1rem 1.2rem 1rem 1.2rem;
+}
+
+.li_medlem::before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: var(--basis-dark); /* Or a color you prefer */
+  }
+
+.medlem_contact_form {
+    width: 100%;
+    text-align: start;
+    margin-left: 0.8rem;
+ }
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
