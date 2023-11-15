@@ -303,6 +303,27 @@ body {
     font-family: var(--headers);
     font-size: var(--header-m);
 }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -318,4 +339,8 @@ body {
 
 .search-container {
     display: none;
+    background-color: #f2fff2;
+    border: 2px solid #0a330a;
+    
+   
 }
