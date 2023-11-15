@@ -5,15 +5,29 @@
     --neutral-dark: #060d06;
     --basis-light: #408040;
     --basis-dark: #0a330a;
+    
     /* font-sizes */
-    --header-l: 2rem;
-    --header-m: 1.5rem;
-    --main-txt-l: 1.3rem;
-    --main-txt-s: 1.1rem;
+    --header-l: 1.8rem;
+    --header-m: 1.4rem;
+    --main-txt-l: 1.2rem;
+    --main-txt-s: 1rem;
+    
     /* font-families */
     --headers: lemonde-courrier, serif;
+    /*--Regular = font-weight: 400
+        Demi = font-weight: 600
+        Bold = font-weight: 700 -----*/
     --main-txt: jaf-domus, sans-serif;
+    /*--Regular = font-weight: 400
+        Semibold = font-weight: 600
+        Bold = font-weight: 700 -----*/
 }
+
+/* -----------------------
+    General styling
+-------------------------- */
+
+/* ------ body -------*/
 
 body {
     background-color: var(--neutral-light);
@@ -25,6 +39,8 @@ body {
     padding: 0;
 }
 
+/* -------- grid layout ------------- */
+
 .body_grid {
     display: grid;
     grid-template-columns: 100%;
@@ -35,25 +51,28 @@ body {
     'footer';
 }
 
-/* Styling af h1 */
+/* ---------- h1 ---------------- */
+
 .heading_1 {
-    padding-bottom: 1rem;
     color: var(--basis-dark);
-    font-weight: 800;
     font-family: var(--headers);
     font-size: var(--header-l);
+    font-weight: 700;
+    padding-bottom: 1rem;
 }
 
-/* Styling af h2 */
+/* ------------ h2 ------------- */
+
 .heading_2 {
-    padding-bottom: 1rem;
     color: var(--basis-dark);
-    font-weight: 600;
     font-family: var(--headers);
     font-size: var(--header-m);
+    font-weight: 700;
+    padding: 5% 0;
 }
 
-/* Styling af h3 */
+/* --------- h3 --------------- */
+
 .heading_3 {
     color: var(--basis-dark);
     font-family: var(--headers);
@@ -61,12 +80,42 @@ body {
     font-weight: 600;
 }
 
-/* Styling af p */
+/* --------- p ----------------- */
+
 .main_txt {
     color: var(--neutral-dark);
     font-size: var(--main-txt-s);
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.5;
+    text-align: justify;
+}
+
+/* -------- call-to-action-button --------- */
+
+.cta_btn {
+    background-color: var(--basis-dark);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px var(--neutral-medium);
+    color: var(--neutral-light);
+    cursor: pointer;
+    display: inline-block;
+    font-family: var(--headers);
+    margin: 10% auto;
+    outline: none;
+    padding: 5% 8%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cta_btn:hover {
+    background-color: var(--basis-light)
+}
+    
+.cta_btn:active {
+    background-color: var(--basis-light);
+    box-shadow: 0 2px;
+    transform: translateY(2px);
 }
 
 /*---------------------------
@@ -84,6 +133,8 @@ body {
     position: relative;
 }
 
+/* ------- Logo --------------- */
+
 .logo {
     align-items: center;
     display: flex;
@@ -95,11 +146,14 @@ body {
     padding: 0 10px;
 }
 
+/* -------- Navigation ----------- */
+
 .nav_icon {
     align-items: center;
     display: flex;
     flex-direction: row;
-    justify-self: flex-end;
+    justify-content: flex-end;
+    max-width: 60%;
 }
 
 .sog_icon,
@@ -108,14 +162,38 @@ body {
     padding: 0 10px;
 }
 
-/*-----------------
-    Burgermenu
--------------------*/
+/* --------- Search field ---------------- */
+
+.search-container {
+    background-color: var(--neutral-light);
+    border: 3px solid var(--basis-dark);
+    border-radius: 5px;
+    display: none;
+    max-width: 40%;
+}
+
+.search_field {
+    background-color: var(--neutral-light);
+    border: transparent;
+    border-radius: 5px;
+    color: var(--neutral-medium);
+    font-family: var(--headers);
+    max-width: 100%;
+}
+
+.sog:checked ~ .search-container{
+    display: flex;
+}
+
+/* ----------- Burgermenu ---------------------- */
+
 .sog,
 .mobile_menu,
 .menu_arrow {
     display: none;
 }
+
+/* --------- Main menu ------------------------ */
 
 .menu_list {
     background-color: var(--neutral-medium);
@@ -152,6 +230,8 @@ body {
     transform: translateY(0);
 }
 
+/* ---------- Sub menus -------------------- */
+
 .arrow {
     cursor: pointer;
     float: inline-end;
@@ -182,9 +262,9 @@ body {
     display: flex;
 }
 
-/*-----------------
-    Index main
--------------------*/
+/* -------------------------------------
+    Styling of main content
+-------------------------------------- */
 
 .main {
     align-items: center;
@@ -196,6 +276,10 @@ body {
     max-width: 100%;
 }
 
+/*-------------------------------
+    Index
+---------------------------------*/
+
 .index_hero {
     display: flex;
     flex-direction: column;
@@ -206,13 +290,13 @@ body {
 }
 
 .i_hero_img {
+    border: 5px solid var(--basis-dark);
+    border-radius: 5px;
     max-width: 100%;
-    padding: 2%;
 }
 
 .index_txt {
-    padding: 0 5%;
-    width: 80%;
+    width: 89%;
 }
 
 .index_ad {
@@ -221,123 +305,33 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 8% 0;
     width: 90%;
 }
 
-.i_ad_left {
-    max-width: 50%;
+.i_ad_section {
+    padding: 3%;
     text-align: center;
+    width: 50%;
 }
 
 .i_ad_img {
     border: 5px solid var(--basis-dark);
     border-radius: 5px;
-    width: 80%;
+    width: 90%;
 }
 
-.i_ad_right {
+.i_ad_txt {
     font-size: calc(--main-txt - 10%);
-    max-width: 50%;
-    padding: 5%;
-    text-align: center;
-}
-
-
-
-/*-----------------
-    Footer section
--------------------*/
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    font-size: var(--main-txt-s);
-    justify-content: space-between;
-    height: calc(100% + 5rem);
-    align-items: center;
-    text-align: center;
-    padding: 7% 2% 5% 2%;
-    background-color: var(--neutral-medium);
-}
-
-.footer_section:not(:last-child) {
-    padding: 2%;
-}
-
-.footer_some_img {
-    width: 8%;
-    margin-right: 10px;
-}
-
-.footer_heading {
-    font-weight: 650;
-}
-
-.footer_text {
+    font-weight: 600;
     line-height: 1.5;
-    padding-top: 3%;
+    padding-top: 5%;
+    text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*-----------------
-    main section
--------------------*/
-
-/*-----------------
-    main fejlside section
--------------------*/
+/*-----------------------------------
+    404 error
+-------------------------------------*/
 
 .main_fejlside {
     display: flex;
@@ -358,81 +352,52 @@ body {
     padding-bottom: 1rem;
 }
 
-/* Styling af call-to-action-button */
-.cta_btn {
-    display: inline-block;
-    padding: 5% 8%;
-    font-size: 15px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: var(--neutral-light);
-    background-color: var(--basis-dark);
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0 4px var(--neutral-medium);
-    margin: 10% auto;
-    font-family: var(--headers);
-}
+/*--------------------------------------
+    Footer
+---------------------------------------*/
 
-.cta_btn:hover {
-    background-color: var(--basis-light)
-}
-    
-.cta_btn:active {
-    background-color: var(--basis-light);
-    box-shadow: 0 2px;
-    transform: translateY(2px);
-}
-
-
-/* Styling af h2 */
-.heading_2 {
-    padding-bottom: 1rem;
-    color: var(--basis-dark);
-    font-weight: 500;
-    font-family: var(--headers);
-    font-size: var(--header-m);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*---------------
-     Søgefelt
-----------------*/
-.sog:checked ~ .search-container{
+.footer {
+    align-items: center;
+    background-color: var(--neutral-medium);
     display: flex;
+    flex-direction: column;
+    font-size: var(--main-txt-s);
+    grid-area: footer;
+    justify-content: flex-start;
+    margin-top: 15%;
+    padding: 10% 0 5% 0;
+    text-align: center;
 }
 
-.search-container {
-    display: none;
-    background-color: #f2fff2;
-    border: 2px solid #0a330a;
-    
-   
+.foot_address {
+    max-width: 90%;
+}
+
+.footer_some_img {
+    padding: 10px;
+    width: 10%;
+}
+
+.footer_heading {
+    font-weight: 650;
+}
+
+.footer_text {
+    line-height: 1.5;
+    padding: 3% 0;
+}
+
+.foot_sponsor {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 3% 0 5% 0;
+}
+
+.sponsor_slide {
+    max-width: 70%;
+}
+
+.copyright {
+    font-size: calc(var(--main-txt-s) - 10%);
 }
