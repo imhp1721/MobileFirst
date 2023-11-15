@@ -13,24 +13,134 @@
 <body>
     <!------------------------
         Header and navigation
-    ---------------------------->
+    -------------------------->
+
     <header class="header">
         <div class="logo">
-            <a href="index.html"><img class="logo_img" src="img/logo_m_txt_png.png" alt="Logo"></a>
+            <a href="index.html">
+                <img class="logo_img" src="img/logo_m_txt_png.png" alt="Logo">
+            </a>
         </div>
         <div class="nav_icon">
-            <a href="#"><img class="sog" src="img/sog_png.png" alt="Søg"></a>
-            <label for="mobile_menu" class="burger_btn"><img class="burger" src="img/burger_png.png" alt="Menu"></label>
+            <a href="#">
+                <img class="sog" src="img/sog_png.png" alt="Søg">
+            </a>
+
+            <!-- Burgermenu -->
+
+            <label for="mobile_menu" class="burger_btn">
+                <img class="burger" src="img/burger_png.png" alt="Menu">
+            </label>
             <input type="checkbox" id="mobile_menu" class="mobile_menu">
                 <ul class="menu_list">
-                    <li class="menu_links active_menu"><a class="menu_links" href="#">Forside</a></li>
-                    <li class="menu_links"><a class="menu_links" href="#">Om</a></li>
-                    <li class="menu_links"><a class="menu_links" href="#">Arrangementer</a></li>
-                    <li class="menu_links"><a class="menu_links" href="#">Bliv medlem</a></li>
-                    <li class="menu_links"><a class="menu_links" href="#">Kontakt</a></li>
+
+                    <!-- Main menu / sub pages -->
+
+                    <li class="menu_links active_menu">
+                        <a class="menu_links" href="index.html">Forside</a>
+                    </li>
+
+                    <!-- "Om" -->
+
+                    <li class="menu_links">
+                        <a class="menu_links" href="om.html">Om</a>
+                        <label for="om_arrow" class="arrow_btn">
+                            <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
+                        </label>
+                        <input type="checkbox" id="om_arrow" class="menu_arrow">
+
+                        <!-- "Om" sub pages -->
+
+                        <ul class="sub_list">
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/bestyrelsen.html">Bestyrelsen</a>
+                            </li>
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/bb-historie.html">Busbjergs historie</a>
+                            </li>
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/vores-medlemmer.html">Vores medlemmer</a>
+                            </li>
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/sponsorer.html">Sponsorer</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- "Arrangementer" -->
+
+                    <li class="menu_links">
+                        <a class="menu_links" href="arrangementer.html">Arrangementer</a>
+                        <label for="arra_arrow" class="arrow_btn">
+                            <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
+                        </label>
+                        <input type="checkbox" id="arra_arrow" class="menu_arrow">
+
+                        <!-- "Arrangementer sub pages" -->
+
+                        <ul class="sub_list">
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/billetsalg.html">Billetsalg</a>
+                            </li>
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/kalender.html">Kalender</a>
+                            </li>
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/galleri.html">Galleri</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- "Bliv medlem" -->
+
+                    <li class="menu_links">
+                        <a class="menu_links" href="medlem.html">Bliv medlem</a>
+                        <label for="medlem_arrow" class="arrow_btn">
+                            <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
+                        </label>
+                        <input type="checkbox" id="medlem_arrow" class="menu_arrow">
+
+                        <!-- "Bliv medlem sub pages" -->
+
+                        <ul class="sub_list">
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/audition.html">Audition</a>
+                            </li>
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/bb-born.html">Busbjergs børn</a>
+                            </li>
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/busbjergkoret.html">Busbjergkoret</a>
+                            </li>
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/bliv-frivillig.html">Bliv frivillig</a>
+                            </li>
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/stot_os.html">Støt os</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- "Kontakt" -->
+
+                    <li class="menu_links">
+                        <a class="menu_links" href="kontakt.html">Kontakt</a>
+                        <label for="kontakt_arrow" class="arrow_btn">
+                            <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
+                        </label>
+                        <input type="checkbox" id="kontakt_arrow" class="menu_arrow">
+                        
+                        <!-- "Kontakt sub pages" -->
+
+                        <ul class="sub_list">
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/faq.html">FAQ</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
         </div>
-</header>
+    </header>
 
     <!------------------------
         main
