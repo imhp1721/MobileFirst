@@ -26,6 +26,24 @@ body {
     padding: 0;
 }
 
+/* Styling af h1 */
+.heading_1 {
+    padding-bottom: 1rem;
+    color: var(--basis-dark);
+    font-weight: 800;
+    font-family: var(--headers);
+    font-size: var(--header-l);
+}
+
+/* Styling af h2 */
+.heading_2 {
+    padding-bottom: 1rem;
+    color: var(--basis-dark);
+    font-weight: 500;
+    font-family: var(--headers);
+    font-size: var(--header-m);
+}
+
 /*---------------------------
     Header and navigation
 ----------------------------*/
@@ -139,6 +157,7 @@ body {
 #kontakt_arrow:checked ~ .sub_list {
     display: flex;
 }
+
 
 
 
@@ -286,23 +305,7 @@ body {
     transform: translateY(2px);
 }
 
-/* Styling af h1 */
-.heading_1 {
-    padding-bottom: 1rem;
-    color: var(--basis-dark);
-    font-weight: 800;
-    font-family: var(--headers);
-    font-size: var(--header-l);
-}
 
-/* Styling af h2 */
-.heading_2 {
-    padding-bottom: 1rem;
-    color: var(--basis-dark);
-    font-weight: 500;
-    font-family: var(--headers);
-    font-size: var(--header-m);
-}
 
 
 
