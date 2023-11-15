@@ -387,6 +387,35 @@ body {
 }
 
 
+/* Styling af h2 */
+.heading_2 {
+    padding-bottom: 1rem;
+    color: var(--basis-dark);
+    font-weight: 500;
+    font-family: var(--headers);
+    font-size: var(--header-m);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -402,4 +431,8 @@ body {
 
 .search-container {
     display: none;
+    background-color: #f2fff2;
+    border: 2px solid #0a330a;
+    
+   
 }
