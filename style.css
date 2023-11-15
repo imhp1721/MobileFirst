@@ -58,7 +58,6 @@ body {
     font-family: var(--headers);
     font-size: var(--header-l);
     font-weight: 700;
-    padding-top: 5%;
     text-align: center;
 }
 
@@ -278,6 +277,15 @@ body {
     max-width: 100%;
 }
 
+.hero_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5%;
+    text-align: center;
+    width: 90%;
+}
+
 .hero_img {
     border: 5px solid var(--basis-dark);
     border-radius: 5px;
@@ -287,15 +295,6 @@ body {
 /*-------------------------------
     Index
 ---------------------------------*/
-
-.index_hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 5%;
-    text-align: center;
-    width: 90%;
-}
 
 .index_txt {
     width: 89%;
@@ -335,7 +334,13 @@ body {
     Bliv medlem
 --------------------------------------*/
 
-.main_medlem_section {
+.medlem_txt {
+    display: flex;
+    padding: 5% 0;
+    width: 90%;
+}
+
+.medlem_info {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -343,12 +348,12 @@ body {
     width: 90%;
 }
 
-.heading_3 {
-    padding-bottom: 1rem;
-    color: var(--basis-dark);
-    font-weight: 700;
-    font-family: var(--headers);
-    font-size: var(--header-m);
+.main_medlem_section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
 }
 
 .main_text_medlem {

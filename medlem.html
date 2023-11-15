@@ -22,139 +22,139 @@
         Header and navigation
     -------------------------->
 
-        <header class="header">
-            <div class="logo">
-                <a href="index.html">
-                    <img class="logo_img" src="img/logo_m_txt_png.png" alt="Logo">
-                </a>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img class="logo_img" src="img/logo_m_txt_png.png" alt="Logo">
+            </a>
+        </div>
+
+        <!-- Search bar -->
+
+        <div class="nav_icon">
+            <label for="sog" class="sog_btn"> 
+                <img class="sog_icon" src="img/sog_png.png" alt="Søg">
+            </label>
+            <input type="checkbox" id="sog" class="sog">
+            <div class="search-container">    
+                    <input type="search" class="search_field" placeholder="Søg...">
             </div>
+    
+            <!-- Burgermenu -->
 
-            <!-- Search bar -->
+            <label for="mobile_menu" class="burger_btn">
+                <img class="burger" src="img/burger_png.png" alt="Menu">
+            </label>
+                    <input type="checkbox" id="mobile_menu" class="mobile_menu">
+                <ul class="menu_list">
 
-            <div class="nav_icon">
-                <label for="sog" class="sog_btn"> 
-                    <img class="sog_icon" src="img/sog_png.png" alt="Søg">
-                </label>
-                <input type="checkbox" id="sog" class="sog">
-                <div class="search-container">    
-                     <input type="search" class="search_field" placeholder="Søg...">
-                </div>
-        
-                <!-- Burgermenu -->
+                    <!-- Main menu / sub pages -->
 
-                <label for="mobile_menu" class="burger_btn">
-                    <img class="burger" src="img/burger_png.png" alt="Menu">
-                </label>
-                     <input type="checkbox" id="mobile_menu" class="mobile_menu">
-                    <ul class="menu_list">
+                    <li class="menu_links active_menu">
+                        <a class="menu_links" href="index.html">Forside</a>
+                    </li>
 
-                        <!-- Main menu / sub pages -->
+                    <!-- "Om" -->
 
-                        <li class="menu_links active_menu">
-                            <a class="menu_links" href="index.html">Forside</a>
-                        </li>
+                    <li class="menu_links">
+                        <a class="menu_links" href="om.html">Om</a>
+                        <label for="om_arrow" class="arrow_btn">
+                            <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
+                        </label>
+                        <input type="checkbox" id="om_arrow" class="menu_arrow">
 
-                        <!-- "Om" -->
+                        <!-- "Om" sub pages -->
 
-                        <li class="menu_links">
-                            <a class="menu_links" href="om.html">Om</a>
-                            <label for="om_arrow" class="arrow_btn">
-                                <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
-                            </label>
-                            <input type="checkbox" id="om_arrow" class="menu_arrow">
+                        <ul class="sub_list">
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/bestyrelsen.html">Bestyrelsen</a>
+                            </li>
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/bb-historie.html">Busbjergs historie</a>
+                            </li>
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/vores-medlemmer.html">Vores medlemmer</a>
+                            </li>
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/sponsorer.html">Sponsorer</a>
+                            </li>
+                        </ul>
+                    </li>
 
-                            <!-- "Om" sub pages -->
+                    <!-- "Arrangementer" -->
 
-                            <ul class="sub_list">
-                                <li class="sub_links">
-                                    <a class="sub_links" href="html_sub_pg/bestyrelsen.html">Bestyrelsen</a>
-                                </li>
-                                <li class="sub_links">
-                                    <a class="sub_links" href="html_sub_pg/bb-historie.html">Busbjergs historie</a>
-                                </li>
-                                <li class="sub_links">
-                                    <a class="sub_links" href="html_sub_pg/vores-medlemmer.html">Vores medlemmer</a>
-                                </li>
-                                <li class="sub_links">
-                                    <a class="sub_links" href="html_sub_pg/sponsorer.html">Sponsorer</a>
-                                </li>
-                            </ul>
-                        </li>
+                    <li class="menu_links">
+                        <a class="menu_links" href="arrangementer.html">Arrangementer</a>
+                        <label for="arra_arrow" class="arrow_btn">
+                            <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
+                        </label>
+                        <input type="checkbox" id="arra_arrow" class="menu_arrow">
 
-                        <!-- "Arrangementer" -->
+                        <!-- "Arrangementer sub pages" -->
 
-                        <li class="menu_links">
-                            <a class="menu_links" href="arrangementer.html">Arrangementer</a>
-                            <label for="arra_arrow" class="arrow_btn">
-                                <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
-                            </label>
-                            <input type="checkbox" id="arra_arrow" class="menu_arrow">
+                        <ul class="sub_list">
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/billetsalg.html">Billetsalg</a>
+                            </li>
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/kalender.html">Kalender</a>
+                            </li>
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/galleri.html">Galleri</a>
+                            </li>
+                        </ul>
+                    </li>
 
-                            <!-- "Arrangementer sub pages" -->
+                    <!-- "Bliv medlem" -->
 
-                            <ul class="sub_list">
-                                <li class="sub_links">
-                                    <a class="sub_links" href="html_sub_pg/billetsalg.html">Billetsalg</a>
-                                </li>
-                                <li class="sub_links">
-                                    <a class="sub_links" href="html_sub_pg/kalender.html">Kalender</a>
-                                </li>
-                                <li class="sub_links">
-                                    <a class="sub_links" href="html_sub_pg/galleri.html">Galleri</a>
-                                </li>
-                            </ul>
-                        </li>
+                    <li class="menu_links">
+                        <a class="menu_links" href="medlem.html">Bliv medlem</a>
+                        <label for="medlem_arrow" class="arrow_btn">
+                            <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
+                        </label>
+                        <input type="checkbox" id="medlem_arrow" class="menu_arrow">
 
-                        <!-- "Bliv medlem" -->
+                        <!-- "Bliv medlem sub pages" -->
 
-                        <li class="menu_links">
-                            <a class="menu_links" href="medlem.html">Bliv medlem</a>
-                            <label for="medlem_arrow" class="arrow_btn">
-                                <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
-                            </label>
-                            <input type="checkbox" id="medlem_arrow" class="menu_arrow">
+                        <ul class="sub_list">
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/audition.html">Audition</a>
+                            </li>
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/bb-born.html">Busbjergs børn</a>
+                            </li>
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/busbjergkoret.html">Busbjergkoret</a>
+                            </li>
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/bliv-frivillig.html">Bliv frivillig</a>
+                            </li>
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/stot_os.html">Støt os</a>
+                            </li>
+                        </ul>
+                    </li>
 
-                            <!-- "Bliv medlem sub pages" -->
+                    <!-- "Kontakt" -->
 
-                            <ul class="sub_list">
-                                <li class="sub_links">
-                                    <a class="sub_links" href="html_sub_pg/audition.html">Audition</a>
-                                </li>
-                                <li class="sub_links">
-                                    <a class="sub_links" href="html_sub_pg/bb-born.html">Busbjergs børn</a>
-                                </li>
-                                <li class="sub_links">
-                                    <a class="sub_links" href="html_sub_pg/busbjergkoret.html">Busbjergkoret</a>
-                                </li>
-                                <li class="sub_links">
-                                    <a class="sub_links" href="html_sub_pg/bliv-frivillig.html">Bliv frivillig</a>
-                                </li>
-                                <li class="sub_links">
-                                    <a class="sub_links" href="html_sub_pg/stot_os.html">Støt os</a>
-                                </li>
-                            </ul>
-                        </li>
+                    <li class="menu_links">
+                        <a class="menu_links" href="kontakt.html">Kontakt</a>
+                        <label for="kontakt_arrow" class="arrow_btn">
+                            <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
+                        </label>
+                        <input type="checkbox" id="kontakt_arrow" class="menu_arrow">
+                        
+                        <!-- "Kontakt sub pages" -->
 
-                        <!-- "Kontakt" -->
-
-                        <li class="menu_links">
-                            <a class="menu_links" href="kontakt.html">Kontakt</a>
-                            <label for="kontakt_arrow" class="arrow_btn">
-                                <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
-                            </label>
-                            <input type="checkbox" id="kontakt_arrow" class="menu_arrow">
-                            
-                            <!-- "Kontakt sub pages" -->
-
-                            <ul class="sub_list">
-                                <li class="sub_links">
-                                    <a class="sub_links" href="html_sub_pg/faq.html">FAQ</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-            </div>
-        </header>
+                        <ul class="sub_list">
+                            <li class="sub_links">
+                                <a class="sub_links" href="html_sub_pg/faq.html">FAQ</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+        </div>
+    </header>
     
     <!------------------ 
         Main content 
@@ -162,29 +162,42 @@
 
     <main class="main">
 
-        <!-------- hero ----------->
+        <!-- Hero section -->
 
-        <section class="main_medlem_section">
+        <section class="hero_section">
             <h1 class="heading_1">BLIV MEDLEM</h1>
             <h2 class="heading_2">af Busbjerg Gudenådalens Hjemstavnsforening</h2>
             <img src="img/Medlemmer.jpg" alt="Busbjergs medlemmer" class="hero_img">
-            <p class="main_text main_text_medlem">Har du lyst til at være med til at holde et af Danmarks ældste
-                friluftsspil kørende? At bidrage til kulturlivet? 
-                At støtte en god sag? Så kan du blive medlem af 
-                Busbjerg Gudenådalens Hjemstavnsforening, som udover at
-                opsætte musicals hvert år, også er ejer af det smukke 
-                område ved Busbjerg, hvor vi hvert år opfører året Busbjgerspil.
-            </p>
         </section>
 
+        <!-- Information txt -->
+
+        <article class="medlem_txt">
+            <p class="main_txt">
+                Har du lyst til at være med til at holde et af Danmarks ældste friluftsspil kørende? At bidrage til kulturlivet? At støtte en god sag?
+                <br>
+                Så kan du blive medlem af Busbjerg Gudenådalens Hjemstavnsforening, som udover at
+                opsætte musicals hvert år, også er ejer af det smukke område ved Busbjerg, hvor vi hvert år opfører årets Busbjergspil.
+            </p>
+        </article>
+
         <!-- Medlemskaber section -->
-        <section class="main_medlem_section">
+
+        <section class="medlem_info">
             <h3 class="heading_3">Medlemskaber</h3>
-            <p class="main_text main_text_medlem">Du har mulighed for at tegne følgende medlemskaber: </p>
+            <p class="main_txt main_text_medlem">
+                Du har mulighed for at tegne følgende medlemskaber:
+            </p>
             <ul class="main_text_medlem">
-                <li class="li_medlem">Personligt medlemskab: 100 kr. om året</li>
-                <li class="li_medlem">Husstandmedlemskab: 300 kr. om året</li>
-                <li class="li_medlem">Firmamedlemskab + en fribillet: 500 kr. om året</li>
+                <li class="li_medlem">
+                    Personligt medlemskab: 100 kr. om året
+                </li>
+                <li class="li_medlem">
+                    Husstandmedlemskab: 300 kr. om året
+                </li>
+                <li class="li_medlem">
+                    Firmamedlemskab + en fribillet: 500 kr. om året
+                </li>
               </ul>
         </section>
         
@@ -238,26 +251,29 @@
         </section>
 
     </main>
+
     <!------------------------
         Footer
     ---------------------------->
+
     <footer class="footer">
 
-        <!------------------------
-            Adresse info
-        ---------------------------->
-        <div class="footer_section">
-            <h5 class="footer_heading ">Busbjerg Gudenådalens Hjemstavnsforening</h5>
-            <p class="footer_text"> Hagenstrup 25 - 8860 Ultrup <br>
-                busbjerg@busbjerg.dk <br> 
-                CVR: 74740014 <br>
-            </p>
-        </div>
+        <!----- Adresse info ------>
 
-        <!------------------------
-            Sociale medier icons
-        ---------------------------->
-        <div class="footer_section">
+        <section class="foot_address">
+            <h5 class="footer_heading">Busbjerg Gudenådalens Hjemstavnsforening</h5>
+            <p class="footer_text">
+                Hagenstrup 25 - 8860 Ultrup
+                <br>
+                busbjerg@busbjerg.dk
+                <br>
+                CVR: 74740014
+            </p>
+        </section>
+
+        <!------- Social media icons ------->
+
+        <section class="foot_some">
             <a href="https://www.facebook.com/Busbjergspillene" target="_blank">
                 <img src="img/some icons/Facebook_icon.png" alt="facebook icon" class="footer_some_img">
             </a>
@@ -267,14 +283,13 @@
             <a href="https://www.tiktok.com/en/" target="_blank">
                 <img src="img/some icons/tik-tok.png" alt="instagram icon" class="footer_some_img">
             </a>
-        </div>
+        </section>
 
-        <!------------------------------------------------
-            Automatisk slideshow med sponsorer billeder
-        ---------------------------------------------------->
-        <div class="footer_section">
+        <!-------- Image carousel sponsors --------->
+
+        <section class="foot_sponsor">
             <h5 class="footer_heading">Tak til vores sponsorer!</h5>
-            <div class="sponsorer_slideshow" style="max-width: 200px;" >
+            <div class="sponsor_slide">
               <img class="sponsorerSlides" src="img/sponsorer/original/favrskov_mini.png" style="width:100%">
               <img class="sponsorerSlides" src="img/sponsorer/original/bjerringbro_mini.png" style="width:100%">
               <img class="sponsorerSlides" src="img/sponsorer/original/elkon_mini.png" style="width:100%">
@@ -283,21 +298,18 @@
               <img class="sponsorerSlides" src="img/sponsorer/original/roedbakkegaard_mini.png" style="width:100%">
               <img class="sponsorerSlides" src="img/sponsorer/original/xl_mini.png" style="width:100%">
             </div>
+        </section>
 
-        </div>
+        <!-------- Copyright ------->
 
-       <!------------------------
-            copyright Busbjerg
-        ---------------------------->
-        <div class="footer_section">
+        <section class="copyright">
             <h6>Copyright © 2023 Busbjerg</h6>
-        </div>
+        </section>
 
     </footer>
 
-    <!---------------------------------
-        Automatisk slideshow script
-    ----------------------------------->
+    <!----- Image carousel script ------>
+
     <script>
         var myIndex = 0;
         carousel();
