@@ -57,15 +57,17 @@ body {
 
 .menu_list {
     background-color: #c3d9c3;
-    display: none;
+    display: flex;
     flex-direction: column;
     left: 0;
     list-style: none;
-    overflow: hidden;
+    opacity: 0;
     padding: 20px;
     position: absolute;
     right: 0;
-    top: 80px;
+    top: calc(100% - .3rem);
+    transform: translateY(-10px);
+    transition: opacity .3s ease-in-out, transform .3s ease-in-out;
 }
 
 .menu_links {
@@ -83,13 +85,16 @@ body {
 }
 
 .mobile_menu:checked ~ .menu_list {
-    display: flex;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .arrow {
+    cursor: pointer;
     float: inline-end;
     max-height: 10px;
     padding: 5px 10px;
+    transform: rotate(-90deg);
 }
 
 .sub_list {
@@ -97,7 +102,6 @@ body {
     display: none;
     flex-direction: column;
     list-style: none;
-    overflow: hidden;
     padding: 10px;
     position: relative;
 }
