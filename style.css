@@ -257,7 +257,7 @@ body {
 }
 
 /* Styling af call-to-action-button */
-.call-to-action-button {
+.cta_btn {
     display: inline-block;
     padding: 10px 60px;
     font-size: 15px;
@@ -271,19 +271,19 @@ body {
     border-radius: 30px;
     box-shadow: 0 4px var(--neutral-medium);
     margin-top: 3rem;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
     font-family: var(--headers);
 }
 
-.call-to-action-button:hover {
+.cta_btn:hover {
     background-color: var(--basis-light)}
     
-    .call-to-action-button:active {
-        background-color: var(--basis-light);
-        box-shadow: 0 2px #5e5e5e;
-        transform: translateY(2px);
-    }
-    
+    .cta_btn:active {
+    background-color: var(--basis-light);
+    box-shadow: 0 2px;
+    transform: translateY(2px);
+}
+
 /* Styling af h1 */
 .heading_1 {
     padding-bottom: 1rem;
@@ -293,7 +293,7 @@ body {
     font-size: var(--header-l);
 }
 
-/* Styling afh2 */
+/* Styling af h2 */
 .heading_2 {
     padding-bottom: 1rem;
     color: var(--basis-dark);
