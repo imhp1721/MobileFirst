@@ -333,7 +333,7 @@ body {
 }
 
 .i_ad_txt {
-    font-size: calc(--main-txt - 10%);
+    font-size: calc(var(--main-txt) - 10%);
     font-weight: 600;
     line-height: 1.5;
     padding-top: 5%;
