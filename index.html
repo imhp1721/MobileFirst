@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
 
     <title>Forside | Busbjerg Spillene</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
 
 </head>
 
@@ -29,45 +30,39 @@
             </a>
         </div>
 
-        <!-- Search bar -->
+        <div class="nav_icons">
 
-        <div class="nav_icon">
-                <label for="sog" class="sog_btn"> 
-                    <img class="sog_icon" src="img/sog_png.png" alt="Søg">
-                </label>
-                <input type="checkbox" id="sog" class="sog">
-                <div class="search-container">    
-                    <input type="search" class="search_field" placeholder="Søg...">
-                </div>
-            
-    
+            <!-- Search -->
+
+            <img id="search_toggle" class="sog_icon" src="img/sog_png.png" alt="Søg">
+
+            <!-- Search bar -->
+
+            <div class="search-container">    
+                <input type="search" class="search_field" placeholder="Søg...">
+            </div>
+
             <!-- Burgermenu -->
 
-            <label for="mobile_menu" class="burger_btn">
-                <img class="burger" src="img/burger_png.png" alt="Menu">
-            </label>
-            <input type="checkbox" id="mobile_menu" class="mobile_menu">
+            <img id="menu_toggle" class="burger" src="img/burger_png.png" alt="Menu">   
+            
+        <!-- Main menu + sub page menus -->
 
-            <!-- Main menu + sub page menus -->
-
+        <nav class="menu">
             <ul class="menu_list">
-
                 <li class="menu_links active_menu">
                     <a class="menu_links" href="index.html">Forside</a>
                 </li>
 
                 <!-- "Om" -->
 
-                <li class="menu_links">
+                <li class="menu_links has_submenu">
                     <a class="menu_links" href="om.html">Om</a>
-                    <label for="om_arrow" class="arrow_btn">
-                        <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
-                    </label>
-                    <input type="checkbox" id="om_arrow" class="menu_arrow">
+                    <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
 
                     <!-- "Om" sub pages -->
 
-                    <ul class="sub_list">
+                    <ul class="sub_list om_sub">
                         <li class="sub_links">
                             <a class="sub_links" href="html_sub_pg/bestyrelsen.html">Bestyrelsen</a>
                         </li>
@@ -85,16 +80,13 @@
 
                 <!-- "Arrangementer" -->
 
-                <li class="menu_links">
+                <li class="menu_links has_submenu">
                     <a class="menu_links" href="arrangementer.html">Arrangementer</a>
-                    <label for="arra_arrow" class="arrow_btn">
-                        <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
-                    </label>
-                    <input type="checkbox" id="arra_arrow" class="menu_arrow">
+                    <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
 
                     <!-- "Arrangementer sub pages" -->
 
-                    <ul class="sub_list">
+                    <ul class="sub_list arra_sub">
                         <li class="sub_links">
                             <a class="sub_links" href="html_sub_pg/billetsalg.html">Billetsalg</a>
                         </li>
@@ -109,16 +101,13 @@
 
                 <!-- "Bliv medlem" -->
 
-                <li class="menu_links">
+                <li class="menu_links has_submenu">
                     <a class="menu_links" href="medlem.html">Bliv medlem</a>
-                    <label for="medlem_arrow" class="arrow_btn">
-                        <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
-                    </label>
-                    <input type="checkbox" id="medlem_arrow" class="menu_arrow">
+                    <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
 
                     <!-- "Bliv medlem sub pages" -->
 
-                    <ul class="sub_list">
+                    <ul class="sub_list medlem_sub">
                         <li class="sub_links">
                             <a class="sub_links" href="html_sub_pg/audition.html">Audition</a>
                         </li>
@@ -139,16 +128,13 @@
 
                 <!-- "Kontakt" -->
 
-                <li class="menu_links">
+                <li class="menu_links has_submenu">
                     <a class="menu_links" href="kontakt.html">Kontakt</a>
-                    <label for="kontakt_arrow" class="arrow_btn">
-                        <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
-                    </label>
-                    <input type="checkbox" id="kontakt_arrow" class="menu_arrow">
+                    <img class="arrow" src="img/menu_arrow.png" alt="Udvid menu">
                     
                     <!-- "Kontakt sub pages" -->
 
-                    <ul class="sub_list">
+                    <ul class="sub_list kontakt_sub">
                         <li class="sub_links">
                             <a class="sub_links" href="html_sub_pg/faq.html">FAQ</a>
                         </li>
@@ -274,6 +260,7 @@
           setTimeout(carousel, 2500); // Change image every 2,5 seconds
         }
      </script>
+     <script src="script.js"></script>
 
 </body>
 </html>
