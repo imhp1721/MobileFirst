@@ -333,11 +333,30 @@ body {
 }
 
 .i_ad_txt {
-    font-size: calc(--main-txt - 10%);
+    font-size: calc(var(--main-txt) - 10%);
     font-weight: 600;
     line-height: 1.5;
     padding-top: 5%;
     text-align: center;
+}
+
+/*-------------------------------
+    Om os
+---------------------------------*/
+
+.om_head {
+    padding: 5% 0 2% 0;
+}
+
+.om_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 89%;
+}
+
+.om_txt {
+    padding: 2% 0;
 }
 
 /*------------------------------------
@@ -389,7 +408,7 @@ body {
     padding: 2%;
 }
 
-input[type=text],
+input[type=text], input[type=tel], textarea[name=message],
 input[type=email] {
     background-color: var(--neutral-light);
     border: 5px solid var(--basis-light);
@@ -425,26 +444,36 @@ input[type=submit] {
 
 
 /*-----------------------------------
-    page not found - styling
+    error - page not found - styling
 -------------------------------------*/
 
-.main_fejlside {
+.error_main {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 2.7rem 1.4rem 0 1.4rem;
+    justify-content: center;
+    padding-top: 10%;
+    width: 90%;
 }
 
-.main_fejlside_section {
-    padding-bottom: 2rem;
+.error_head {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
 }
 
-.fejlside_image {
-    width: 100%;
+.error_img {
     max-width: 800px;
-    padding-bottom: 1rem;
+    padding: 5% 0;
+    width: 100%;
+}
+
+.error_txt {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0;
+    text-align: center;
+    width: 90%;
 }
 
 /*--------------------------------------
@@ -636,4 +665,56 @@ input[type=submit] {
     box-shadow: 0 2px;
     transform: translateY(2px);
 }
+
+/*---------------------
+     Kontakt info
+-------------------- */
+.main_kontakt_section {
+    padding: 5%;
+    }
+
+.kontakt_udfyld{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5%;
+    width: 90%; 
+
+}
+ .main_{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+    }
+
+.kontakt_os_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2%;
+    text-align: center;
+    width: 90%;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Links to reset, fonts and styling stylesheets -->
+
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://use.typekit.net/zey5vry.css">
     <link rel="stylesheet" href="style.css">
 
-    <title>Siden findes ikke | 404 error</title>
+    <title>Siden findes ikke | Busbjerg Spillene</title>
+
 </head>
-<body>
+
+<!-- Start of visible content -->
+
+<body class="body_grid">
+
     <!------------------------
         Header and navigation
     -------------------------->
@@ -21,17 +28,24 @@
                 <img class="logo_img" src="img/logo_m_txt_png.png" alt="Logo">
             </a>
         </div>
-        <div class="nav_icon">
-            <a href="#">
-                <img class="sog" src="img/sog_png.png" alt="Søg">
-            </a>
 
+        <!-- Search bar -->
+
+        <div class="nav_icon">
+            <label for="sog" class="sog_btn"> 
+                <img class="sog_icon" src="img/sog_png.png" alt="Søg">
+            </label>
+            <input type="checkbox" id="sog" class="sog">
+            <div class="search-container">    
+                <input type="search" class="search_field" placeholder="Søg...">
+            </div>
+    
             <!-- Burgermenu -->
 
             <label for="mobile_menu" class="burger_btn">
                 <img class="burger" src="img/burger_png.png" alt="Menu">
             </label>
-            <input type="checkbox" id="mobile_menu" class="mobile_menu">
+                    <input type="checkbox" id="mobile_menu" class="mobile_menu">
                 <ul class="menu_list">
 
                     <!-- Main menu / sub pages -->
@@ -141,24 +155,29 @@
                 </ul>
         </div>
     </header>
+    
+    <!------------------ 
+        Main content 
+    -------------------->
 
-    <!------------------------
-        main
-    ---------------------------->
-    <main class="main_fejlside">
+    <main class="main">
 
-        <div class="main_fejlside_section">
-            <h1 class="heading_1">ÅH NEj!</h1>
-            <h2 class="heading_2">Vi er vist lidt for travlt med at synge og danse...</h2>
-        </div>
-        
-        <div class="fejlside_image">
-            <img src="img/fejlside-billede-2.png" alt="fejlside billede" class="fejlside_image">
-        </div>
+        <div class="error_main">
+            <section class="error_head">
+                <h1 class="heading_1">ÅH NEj!</h1>
+                <h2 class="heading_2">Vi er vist lidt for travlt med at synge og danse...</h2>
+            </section>
+            
+            <section class="error_img">
+                <img src="img/fejlside-billede-2.png" alt="fejlside grafik" class="error_img">
+            </section>
 
-        <div class="main_fejlside_section">
-            <h2 class="heading_2">Siden, du har valgt, findes ikke eller er under konstruktion.</h2>
-            <a href="index.html"><button class="cta_btn">GÅ TIL FORSIDEN</button></a>
+            <section class="error_txt">
+                <h2 class="heading_3">Siden, du har valgt, findes ikke eller er under konstruktion.</h2>
+                <a href="index.html">
+                    <button class="cta_btn">gå til forsiden</button>
+                </a>
+            </section>
         </div>
 
     </main>
