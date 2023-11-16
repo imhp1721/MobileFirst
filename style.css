@@ -340,6 +340,25 @@ body {
     text-align: center;
 }
 
+/*-------------------------------
+    Om os
+---------------------------------*/
+
+.om_head {
+    padding: 5% 0 2% 0;
+}
+
+.om_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 89%;
+}
+
+.om_txt {
+    padding: 2% 0;
+}
+
 /*------------------------------------
     Bliv medlem
 --------------------------------------*/
