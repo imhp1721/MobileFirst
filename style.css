@@ -543,16 +543,97 @@ input[type=submit] {
 
 
 
+.arrangement_section {
+    display: flex;
+    align-self: flex-start;
+    padding-left: 5%;
+    margin-top: 6%;
+    flex-direction: row;
+}
 
 
 
+.arrangement_text {
+    color: var(--neutral-dark);
+    font-size: var(--main-txt-s);
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 4% 2%;
+}
 
 
+.index_ad_arrangement {
+    align-items: center;
+    background-color: var(--neutral-medium);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1% 0;
+    width: 90%;
+}
 
+.a_heading {
+    color: var(--basis-dark);
+    font-family: var(--headers);
+    font-size: var(--main-txt-l);
+    font-weight: 600;
+    margin-bottom: 1%;
+    padding-left: 8%;
+}
 
+.kalender_section {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
 
+.kalender_box {
+    background-color: var(--basis-dark);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    margin: 4% 2%;
 
+}
 
+.kalender_img {
+    border: 5px solid var(--basis-dark);
+    border-radius: 5px;
+    width: 90%;
+    align-items: center;
+}
 
-  
+.a_text_box {
+    color: var(--neutral-light);
+    font-size: var(--main-txt-s);
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 2% 0;
+}
+
+.cta_btn_arrangement {
+    background-color: var(--basis-dark);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px var(--neutral-medium);
+    color: var(--neutral-light);
+    cursor: pointer;
+    display: inline-block;
+    font-family: var(--headers);
+    outline: none;
+    padding: 2% 8%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2% 30%;
+}
+
+.cta_btn_arrangement:hover {
+    background-color: var(--basis-light)
+}
+    
+.cta_btn_arrangement:active {
+    background-color: var(--basis-light);
+    box-shadow: 0 2px;
+    transform: translateY(2px);
+}
 
