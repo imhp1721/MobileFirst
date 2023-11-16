@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/zey5vry.css">
     <link rel="stylesheet" href="style.css">
 
-    <title>Kontakt</title>
+    <title>Kontakt | Busbjerg Spillene</title>
 
 </head>
 
@@ -163,53 +163,49 @@
 
     <main class="main_">
 
-
-  <!--- main_kontakt_section -->
-
+        <!--- Main_kontakt_section -->
 
         <section class="main_kontakt_section">
             <h1 class="heading_1">Kontakt os</h1>
         </section>
       
-    <!--Kontakt-information txt-->
+        <!--Kontakt-information txt-->
 
-    <article class="kontakt_os_txt">
-        <p class="main_txt">
-            Velkommen til kontakt os. 
-            <br><br>
-            Har du spørgsmål, kommentar eller brug for assistance, så er vi her for at hjælpe. 
-            <br>
-            Vores kontaktformular gør det nemt, at komme i kontakt med os. 
-            <br>
-            Udfyld blot felterne nedefor, og vi vil svare så hurtig som muligt. 
-            <br>
-            Har du brug for svar på almindelige spørgsmål, så tag et kig på vores FAQ for at finde svar, på de mest stillede spørgsmål. 
-            <br><br>
-            Vi ser frem til at høre fra dig.
-        </p>
-    </article>
+        <article class="kontakt_os_txt">
+            <p class="main_txt">
+                Velkommen til kontakt os. 
+                <br><br>
+                Har du spørgsmål, kommentar eller brug for assistance, så er vi her for at hjælpe. 
+                <br>
+                Vores kontaktformular gør det nemt, at komme i kontakt med os. 
+                <br>
+                Udfyld blot felterne nedefor, og vi vil svare så hurtig som muligt. 
+                <br>
+                Har du brug for svar på almindelige spørgsmål, så tag et kig på vores FAQ for at finde svar, på de mest stillede spørgsmål. 
+                <br><br>
+                Vi ser frem til at høre fra dig.
+            </p>
+        </article>
 
+        <!--- Kontakt formular -->
 
-    <!--- Informationsbox -->
+        <section class="kontakt_udfyld">
+            <form action="#" method="post" autocomplete="on" name="kontakt">
+                <label for="name">Navn *</label>
+                <input type="text" id="name" class="input_field" placeholder="Skriv fulde navn..." required>
 
-    <section class="kontakt_udfyld">
-        <form action="#" method="post" autocomplete="on" name="kontakt">
-            <label for="name">Navn *</label>
-            <input type="text" id="name" class="input_field" placeholder="Skriv fulde navn..." required>
+                <label for="phone">Telefonnummer *</label>
+                <input type="tel" id="phone" class="input_field" placeholder="Skriv dit telefonnummer her..." required>
 
-            <label for="phone">Telefonnummer *</label>
-            <input type="tel" id="phone" class="input_field" placeholder="Skriv dit telefonnummer her..." required>
+                <label for="email">E-mail *</label>
+                    <input type="email" id="email" class="input_field" placeholder="Skriv e-mail..." required>
 
-            <label for="email">E-mail *</label>
-                <input type="email" id="email" class="input_field" placeholder="Skriv e-mail..." required>
+                <label for="message">Besked *</label>
+                <textarea name="message" id="message" class="input_field" required>Skriv din besked her...</textarea>
 
-            <label for="message">Besked *</label>
-            <textarea name="message" id="message" class="input_field" required>Skriv din besked her...</textarea>
-
-
-            <input type="submit" value="Indsend" class="cta_btn" formtarget="_blank">
-        </form>
-    </section>
+                <input type="submit" value="Indsend" class="cta_btn" formtarget="_blank">
+            </form>
+        </section>
 
     </main>
 
