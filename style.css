@@ -425,26 +425,36 @@ input[type=submit] {
 
 
 /*-----------------------------------
-    page not found - styling
+    error - page not found - styling
 -------------------------------------*/
 
-.main_fejlside {
+.error_main {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 2.7rem 1.4rem 0 1.4rem;
+    justify-content: center;
+    padding-top: 10%;
+    width: 90%;
 }
 
-.main_fejlside_section {
-    padding-bottom: 2rem;
+.error_head {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
 }
 
-.fejlside_image {
-    width: 100%;
+.error_img {
     max-width: 800px;
-    padding-bottom: 1rem;
+    padding: 5% 0;
+    width: 100%;
+}
+
+.error_txt {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0;
+    text-align: center;
+    width: 90%;
 }
 
 /*--------------------------------------
