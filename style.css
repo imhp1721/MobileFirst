@@ -223,11 +223,15 @@ body {
 }
 
 .menu_links {
+    align-items: center;
     color: var(--basis-dark);
+    display: flex;
     font-family: var(--headers);
     font-size: var(--main-txt-l);
     font-weight: 700;
+    justify-content: space-between;
     padding: 5px;
+    position: relative;
 }
 
 .active_menu {
@@ -245,9 +249,7 @@ body {
 
 .arrow {
     cursor: pointer;
-    float: inline-end;
     max-height: 10px;
-    padding: 5px 10px;
     transform: rotate(-90deg);
 }
 
@@ -530,7 +532,7 @@ input[type=submit] {
 /*--------------------------------------
     Styling for bigger screens
 ---------------------------------------*/
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
     /*---------- Header and navigation ---------*/
 
@@ -568,9 +570,10 @@ input[type=submit] {
     /* --------- Main menu ------------------------ */
 
     .menu_list {
+        align-items: center;
         display: flex;
         flex-direction: row;
-        height: 50%;
+        justify-content: center;
         opacity: 1;
         padding: 0 10px;
         pointer-events: auto;
