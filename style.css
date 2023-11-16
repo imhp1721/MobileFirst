@@ -389,7 +389,7 @@ body {
     padding: 2%;
 }
 
-input[type=text],
+input[type=text], input[type=tel], textarea[name=message],
 input[type=email] {
     background-color: var(--neutral-light);
     border: 5px solid var(--basis-light);
@@ -555,4 +555,56 @@ input[type=submit] {
 
 
   
+
+/*---------------------
+     Kontakt info
+-------------------- */
+.main_kontakt_section {
+    padding: 5%;
+    }
+
+.kontakt_udfyld{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5%;
+    width: 90%; 
+
+}
+ .main_{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+    }
+
+.kontakt_os_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2%;
+    text-align: center;
+    width: 90%;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
