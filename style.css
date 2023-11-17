@@ -339,6 +339,115 @@ body {
     padding: 2% 0;
 }
 
+/*---------------------
+     Vores arrangemnter
+-------------------- */
+
+.arrangement_section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.kalender_inner_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.kalender_box {
+    background-color: var(--basis-dark);
+    margin: 1%;
+    padding: 3%;
+}
+
+.kalender_img {
+    width: 100%;
+}
+
+.galleri_inner_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.galleri_img {
+    border: 10px solid var(--basis-dark);
+    border-radius: 2px;
+    width: 25%;
+}
+
+.galleri_text {
+    margin-top: 4%;
+    align-self: self-start;
+}
+
+.a_button {
+    margin-top: 6%;   
+}
+
+.heading_section {
+    display: flex;
+    align-self: flex-start;
+    padding-left: 5%;
+    margin-top: 6%;
+    flex-direction: row;
+    text-align: start;
+}
+
+.arrangement_text {
+    color: var(--neutral-dark);
+    font-size: var(--main-txt-s);
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 3%;
+}
+
+.index_ad_arrangement {
+    align-items: center;
+    background-color: var(--neutral-medium);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1% 0;
+    width: 90%;
+}
+
+.a_heading {
+    color: var(--basis-dark);
+    font-family: var(--headers);
+    font-size: var(--main-txt-l);
+    font-weight: 600;
+    margin-bottom: 1%;
+    align-self: start;
+}
+
+.a_text_box {
+    color: var(--neutral-light);
+    font-size: var(--main-txt-s);
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 1% 0;
+}
+
+.cta_btn_arrangement {
+    background-color: var(--basis-dark);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px var(--neutral-medium);
+    color: var(--neutral-light);
+    cursor: pointer;
+    display: inline-block;
+    font-family: var(--headers);
+    outline: none;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 /*-------------------------------
     Arrangementer
 ---------------------------------*/
@@ -747,85 +856,6 @@ input[type=submit] {
         max-width: 80%;
     }
 
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*---------------------
-     Vores arrangemnter
--------------------- */
-
-.heading_section {
-    display: flex;
-    align-self: flex-start;
-    padding-left: 5%;
-    margin-top: 6%;
-    flex-direction: row;
-    text-align: start;
-}
-
-.arrangement_text {
-    color: var(--neutral-dark);
-    font-size: var(--main-txt-s);
-    font-weight: 400;
-    line-height: 1.4;
-    margin: 3%;
-}
-
-.index_ad_arrangement {
-    align-items: center;
-    background-color: var(--neutral-medium);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 1% 0;
-    width: 90%;
-}
-
-.a_heading {
-    color: var(--basis-dark);
-    font-family: var(--headers);
-    font-size: var(--main-txt-l);
-    font-weight: 600;
-    margin-bottom: 1%;
-    align-self: start;
-}
-
-.a_text_box {
-    color: var(--neutral-light);
-    font-size: var(--main-txt-s);
-    font-weight: 600;
-    line-height: 1.5;
-    padding: 1% 0;
-}
-
-.cta_btn_arrangement {
-    background-color: var(--basis-dark);
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0 4px var(--neutral-medium);
-    color: var(--neutral-light);
-    cursor: pointer;
-    display: inline-block;
-    font-family: var(--headers);
-    outline: none;
-    padding: 0.5rem 2rem;
-    text-align: center;
-    text-transform: uppercase;
-}
-=======
     .copyright {
         display: none;
     }
@@ -841,7 +871,6 @@ input[type=submit] {
     .nav_icons {
         max-width: 85%;
     }
->>>>>>> 4054032a8283cd62859c8346f5557bf74bfff080
 
     /* --------- Menu ------------------------ */
 
@@ -850,59 +879,13 @@ input[type=submit] {
     }
     
 
-<<<<<<< HEAD
-.arrangement_section {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    align-items: center;
-    margin-top: 8%;
-}
-
-.kalender_inner_section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 2%;
-}
-
-.kalender_box {
-    background-color: var(--basis-dark);
-    margin: 1%;
-    padding: 3%;
-}
-
-.kalender_img {
-    width: 100%;
-}
-
-.galleri_inner_section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.galleri_img {
-    border: 10px solid var(--basis-dark);
-    border-radius: 2px;
-    width: 25%;
-}
-
-.galleri_text {
-    margin-top: 4%;
-    align-self: self-start;
-}
-
-.a_button {
-    margin-top: 6%;   
-}
-
-/*---------------------
-     Kontakt info
--------------------- */
-.main_kontakt_section {
-    padding: 5%;
-=======
+    /*---------------------
+        Kontakt info
+    -------------------- */
+    .main_kontakt_section {
+        padding: 5%;
+    }
+    
     /* --------- Search ---------------- */
 
     .search-container {
@@ -911,7 +894,6 @@ input[type=submit] {
         position: relative;
         top: 0;
         width: 40%;
->>>>>>> 4054032a8283cd62859c8346f5557bf74bfff080
     }
 
     /* -------------------------------------
